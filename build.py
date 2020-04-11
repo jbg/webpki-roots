@@ -152,7 +152,8 @@ def print_root(cert, data):
   webpki::TrustAnchor {{
     subject: b"{}",
     spki: b"{}",
-    name_constraints: {}
+    name_constraints: {},
+    is_end_entity: false,
   }},
 """.format(commentify(cert), subject, spki, nc))
 
